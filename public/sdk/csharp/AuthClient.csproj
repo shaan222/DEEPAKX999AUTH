@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <RootNamespace>AuthSystem.SDK</RootNamespace>
+    <AssemblyName>AuthSystem.SDK</AssemblyName>
+    <Version>1.0.0</Version>
+    <Authors>MD. FAIZAN, Shivam Jnath</Authors>
+    <Company>Licensify</Company>
+    <Description>Authentication SDK with HWID-based device binding for .NET applications. Founded by MD. FAIZAN.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Management" Version="8.0.0" />
+  </ItemGroup>
+
+</Project>
+

@@ -1,0 +1,31 @@
+✅ FIREBASE CONFIGURATION - READY TO USE
+================================================
+
+Copy this entire content into a new file named `.env.local` in your project root:
+
+================================================
+
+# Firebase Client Configuration - CONFIGURED ✅
+NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyCllIOKW6TOo8BW2c2MjRQ-BB0_-Iyuh8c
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=ghosthub-6e484.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=ghosthub-6e484
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=ghosthub-6e484.firebasestorage.app
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=873073341969
+NEXT_PUBLIC_FIREBASE_APP_ID=1:873073341969:web:c21b046af50fa2416163b0
+NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=G-QBB3K4M8R4
+
+# Firebase Admin SDK - CONFIGURED ✅
+FIREBASE_ADMIN_PROJECT_ID=ghosthub-6e484
+FIREBASE_ADMIN_CLIENT_EMAIL=firebase-adminsdk-fbsvc@ghosthub-6e484.iam.gserviceaccount.com
+FIREBASE_ADMIN_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCeueMvst9ju0qN\nR6Qp5TulVZDJegBHbQwN4cGUonCLfcbfwRsnhPQocuIDCbcEr0NNW493q/+3815G\ngm/oUREBuYgIHzku5KpMiJoYrAB3iQQGKyCZzHuxT1ogkqVVoVUH/7Xs5+KExrYj\nZnLIHi+90NksduHqSWxLmNcVbb8kjidqHLMd7hyxuEMdd4+DUTS48ULgikiG/yaF\nAFKmqcKCy0BhM7+tJaPLzKH8rw2rd09RfrW16FrAd6UK1wfGWOfirSuGLa8ms5RY\nkNwAPtqMxAvL/5ONA6yTpWFM1QB/yriGV4dTXLbHEDz32Xf2Gb8I5Gw23wf4TqXH\n2BTI2NlfAgMBAAECggEALH1bBhgjkF9DXsVJaOrVZJrOugJlyJ9ypQN10JUVaavo\nDfihBVs5WosU+ZgEAh6kBS9YT8lYpHVlI+tUta/fTfX0gJ5L126Fo20YkDjJ6rdv\ndtEo0qMjuofM8dtY118gp9zPX+eBMQlHrTV+j8QSSqia7uElopdQ8QGWq+12iaaT\nuTOHsh2n/rloKpY+9CxpjbJsGzYxvmlFWKgCtsSlTU5qIGjn0aZjxBF/WJXC84w9\nE8GiMvdYgWqhVSi0BZzcaD3Y3HvjMoRNMACNzt2VqSvyJ734PHHmHuGLzvJPOmiI\n86L2eNLMugFEMpUVWM1a0LfdnULT8gPwD7jPlKyzDQKBgQDK2FiN3EYveZcwR/rw\nF1Qmw+YTPJYSCWNqL2ubnuy1tmIdraW8jITjItO4dPvkujGO94moGVBKJk0FgVPS\nfTLFpfZxEl/quG14/dIRz2w9ZVV2N1+Yhyx2PSK7Rf56vrkdrCDLcbOseWd1ChIG\nfwIJ5fxNo4y5kfG/r+pmgZp2pQKBgQDIUd2NdHnmpmhCy5YeTDAl8l5IeQiNo4ye\nS8PQYE38I3PsTdkqqdx4WlrXu4NPRsgxIv16arAj0s7dOLJC0f8ehZGCqxeK8ENk\nt5IQfFnkREAcE19WiuwILXH23tGWLo3uYh0Bm2P3DaTK24aZbb7gf2X8bh6pucBd\n8Sx+ZNcUswKBgQCbg7SYxklU+o6MKJNd4TTWJ5jMJMYVe/cpIMQKYpSuV+7vPAN2\nA/GZxki2AZJhcNKv/l4eb5Hb13NzhgyCsxPq7mt7kw/Qf6cGfOrCVtlwVLFp2dhD\ns1bGK+bl1yrcZj68XgwijcCnucg0tgzNyDAC8L03tO0eFKNYSAGYp0KKNQKBgFHi\nDOM2mmGq4fFz0MA/umq4gMu1Fcb39JH8PGWgCCCpyUftpninCGT14i5PCuTL9ScI\nu35fv/JUyJRrCYsA1fz+8jTshOoZPiMcWot8mS4Sq/YOASmaDdNl6DDWceumygOI\nfXzbrOge3p7BT2rGDoEr8l9WEBimwjhkTiC4Taa7AoGAGWoZMqWT8OX3hXs4tCle\nWsoy2LwIdO+4qWt6Jkb4buZWD6f7p8ebP5W8GGywa5syh92CCtzm6KjCEzIJrXw0\nTy4dlZ0vlsd51dP5oAeydDDUMTklE76QbaCSz8XbQGumzMX7veSmepVQc3AuF1QY\nHNWzIUqCBCVrEwQSrjXkLYM=\n-----END PRIVATE KEY-----\n"
+
+================================================
+
+INSTRUCTIONS:
+1. Create a file named `.env.local` in your project root
+2. Copy ALL the content above (between the lines) into it
+3. Save the file
+4. Run: npm run dev
+
+⚠️ IMPORTANT: Do NOT commit this file to git! It's already in .gitignore
+

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "d/PobFLxZ0o=",
+  "success": true,
+  "projectFilePath": "g:\\Full-data\\Frinds Project\\GRABBER exe\\GRABBER exe\\sdk\\csharp\\AuthClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shivam\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\shivam\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\shivam\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\shivam\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\shivam\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

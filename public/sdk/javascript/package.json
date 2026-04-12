@@ -1,0 +1,43 @@
+{
+  "name": "licensify-sdk",
+  "version": "1.0.0",
+  "description": "Official JavaScript/Node.js SDK for Licensify authentication and license management",
+  "main": "licensify-client.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "licensify",
+    "authentication",
+    "license",
+    "hwid",
+    "device-binding",
+    "auth",
+    "licensing",
+    "drm",
+    "software-license"
+  ],
+  "author": "MD. FAIZAN",
+  "contributors": [
+    "MD. FAIZAN (Founder & Developer)",
+    "Shivam Jnath (CTO)"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/licensify/sdk-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/licensify/sdk-javascript/issues"
+  },
+  "homepage": "https://www.licensify.space",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browser": {
+    "crypto": false,
+    "os": false
+  }
+}
+

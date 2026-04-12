@@ -1,0 +1,7 @@
+# Redirect old documentation URLs to protected area
+/hwid-examples.md /unauthorized 301
+/hwid-examples /unauthorized 301
+/integration-example.js /unauthorized 301
+/integration-example /unauthorized 301
+/docs/* /dashboard/docs 301
+

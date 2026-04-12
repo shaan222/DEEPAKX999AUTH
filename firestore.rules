@@ -1,0 +1,163 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper function to check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    // Helper function to check if user is admin
+    function isAdmin() {
+      return isAuthenticated() && 
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Helper function to check if user owns the resource
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    // Helper function to get user role
+    function getUserRole() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role;
+    }
+
+    // Users collection
+    match /users/{userId} {
+      // Users can read their own profile
+      allow read: if isAuthenticated() && (isOwner(userId) || isAdmin());
+      
+      // Users can create their own profile during registration
+      allow create: if isAuthenticated() && isOwner(userId);
+      
+      // Users can update their own profile (but not role)
+      allow update: if isAuthenticated() && isOwner(userId) && 
+                    (!request.resource.data.diff(resource.data).affectedKeys().hasAny(['role'])) ||
+                    isAdmin();
+      
+      // Only admins can delete users
+      allow delete: if isAdmin();
+    }
+
+    // Applications collection
+    match /applications/{appId} {
+      // Users can read applications they own, admins can read all
+      allow read: if isAuthenticated() && (
+        resource.data.ownerId == request.auth.uid || 
+        isAdmin()
+      );
+      
+      // Authenticated users can create applications
+      allow create: if isAuthenticated() && 
+                    request.resource.data.ownerId == request.auth.uid;
+      
+      // Only application owner or admin can update
+      allow update: if isAuthenticated() && (
+        resource.data.ownerId == request.auth.uid || 
+        isAdmin()
+      );
+      
+      // Only application owner or admin can delete
+      allow delete: if isAuthenticated() && (
+        resource.data.ownerId == request.auth.uid || 
+        isAdmin()
+      );
+    }
+
+    // Licenses collection
+    match /licenses/{licenseId} {
+      // Users can read licenses they own, admins can read all
+      allow read: if isAuthenticated() && (
+        resource.data.ownerId == request.auth.uid || 
+        resource.data.applicationOwnerId == request.auth.uid ||
+        isAdmin()
+      );
+      
+      // Application owners and admins can create licenses
+      allow create: if isAuthenticated() && (
+        request.resource.data.ownerId == request.auth.uid ||
+        request.resource.data.applicationOwnerId == request.auth.uid ||
+        isAdmin()
+      );
+      
+      // Only license owner, application owner, or admin can update
+      allow update: if isAuthenticated() && (
+        resource.data.ownerId == request.auth.uid ||
+        resource.data.applicationOwnerId == request.auth.uid ||
+        isAdmin()
+      );
+      
+      // Only license owner, application owner, or admin can delete
+      allow delete: if isAuthenticated() && (
+        resource.data.ownerId == request.auth.uid ||
+        resource.data.applicationOwnerId == request.auth.uid ||
+        isAdmin()
+      );
+    }
+
+    // Invite Codes collection (Admin only)
+    match /inviteCodes/{inviteCodeId} {
+      // Only admins can read invite codes
+      allow read: if isAdmin();
+      
+      // Only admins can create invite codes
+      allow create: if isAdmin() && 
+                    request.resource.data.createdBy == request.auth.uid;
+      
+      // Only admins can update invite codes
+      allow update: if isAdmin();
+      
+      // Only admins can delete invite codes
+      allow delete: if isAdmin();
+    }
+
+    // Resellers collection
+    match /resellers/{resellerId} {
+      // Application owners can read their resellers, admins can read all
+      allow read: if isAuthenticated() && (
+        resource.data.ownerId == request.auth.uid ||
+        isAdmin()
+      );
+      
+      // Application owners can create resellers for their apps
+      allow create: if isAuthenticated() && 
+                    request.resource.data.ownerId == request.auth.uid;
+      
+      // Only reseller owner or admin can update
+      allow update: if isAuthenticated() && (
+        resource.data.ownerId == request.auth.uid ||
+        isAdmin()
+      );
+      
+      // Only reseller owner or admin can delete
+      allow delete: if isAuthenticated() && (
+        resource.data.ownerId == request.auth.uid ||
+        isAdmin()
+      );
+    }
+
+    // Security logs collection (Admin only)
+    match /securityLogs/{logId} {
+      allow read: if isAdmin();
+      allow write: if false; // Only backend can write
+    }
+
+    // Rate limit tracking (Backend only)
+    match /rateLimits/{limitId} {
+      allow read, write: if false; // Only backend can access
+    }
+
+    // IP reputation tracking (Backend only)
+    match /ipReputation/{ip} {
+      allow read, write: if false; // Only backend can access
+    }
+
+    // Deny all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+

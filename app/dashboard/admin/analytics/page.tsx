@@ -372,7 +372,7 @@ export default function AdminAnalyticsPage() {
                     boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
                   }}
                   cursor={{ stroke: '#6366f1', strokeWidth: 1, strokeDasharray: '5 5' }}
-                  formatter={(value: unknown, name: string) => {
+                  formatter={(value: unknown, name?: string) => {
                     const label = name === 'users' ? 'Users' : 'Licenses';
                     return [`${value} ${label}`, label];
                   }}

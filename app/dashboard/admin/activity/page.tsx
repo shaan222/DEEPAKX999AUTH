@@ -764,11 +764,11 @@ export default function AdminActivityPage() {
                         boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
                       }}
                       cursor={{ fill: 'rgba(59, 130, 246, 0.1)' }}
-                      formatter={(value: unknown, name: string) => {
+                      formatter={(value: unknown, name?: string) => {
                         if (name === 'value') {
                           return [String(value), 'Total Events'];
                         }
-                        return [String(value), name.charAt(0).toUpperCase() + name.slice(1)];
+                        return [String(value), name ? name.charAt(0).toUpperCase() + name.slice(1) : ''];
                       }}
                       labelFormatter={(label) => `Hour: ${label}`}
                       content={({ active, payload }) => {

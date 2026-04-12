@@ -431,11 +431,11 @@ export default function PricingPage() {
                     padding: '8px',
                     color: '#f1f5f9',
                   }}
-                  formatter={(value: any, name: string) => {
+                  formatter={(value: any, name?: string) => {
                     if (name === 'Savings') {
                       return [`$${value.toFixed(2)} Saved`, 'Savings'];
                     }
-                    return [`$${value.toFixed(2)}`, name];
+                    return [`$${value.toFixed(2)}`, name || 'Value'];
                   }}
                 />
                 <Legend wrapperStyle={{ color: '#cbd5e1' }} />

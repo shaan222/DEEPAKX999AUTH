@@ -431,7 +431,7 @@ export default function PricingPage() {
                     padding: '8px',
                     color: '#f1f5f9',
                   }}
-                  formatter={(value: any, name?: string) => {
+                  formatter={(value: any, name: any) => {
                     if (name === 'Savings') {
                       return [`$${value.toFixed(2)} Saved`, 'Savings'];
                     }

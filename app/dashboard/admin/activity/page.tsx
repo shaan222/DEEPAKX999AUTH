@@ -764,7 +764,7 @@ export default function AdminActivityPage() {
                         boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
                       }}
                       cursor={{ fill: 'rgba(59, 130, 246, 0.1)' }}
-                      formatter={(value: unknown, name?: string) => {
+                      formatter={(value: unknown, name: any) => {
                         if (name === 'value') {
                           return [String(value), 'Total Events'];
                         }

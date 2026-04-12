@@ -936,7 +936,7 @@ export default function LicenseDetailsPage() {
                           padding: '12px',
                           boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.15)',
                         }}
-                        formatter={(value: unknown, name?: string) => [`${value} users`, 'Active']}
+                        formatter={(value: unknown, name: any) => [`${value} users`, 'Active']}
                         labelFormatter={(label) => label}
                         cursor={{ stroke: '#f59e0b', strokeWidth: 2, strokeDasharray: '5 5' }}
                       />
@@ -1009,7 +1009,7 @@ export default function LicenseDetailsPage() {
                           padding: '12px',
                           boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.15)',
                         }}
-                        formatter={(value: unknown, name?: string) => [`${value} users`, 'Count']}
+                        formatter={(value: unknown, name: any) => [`${value} users`, 'Count']}
                         cursor={{ fill: 'rgba(99, 102, 241, 0.1)' }}
                       />
                       <Bar dataKey="count" fill="url(#appGradient)" radius={[0, 12, 12, 0]} />

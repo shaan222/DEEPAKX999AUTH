@@ -441,7 +441,7 @@ export default function AdminDashboardPage() {
                   fontSize: '12px',
                 }}
                 cursor={{ stroke: '#6366f1', strokeWidth: 1 }}
-                formatter={(value: any, name?: string) => [typeof value === 'number' ? value.toFixed(2) : value, 'Frequency']}
+                formatter={(value: any, name: any) => [typeof value === 'number' ? value.toFixed(2) : value, 'Frequency']}
                 labelFormatter={(label) => `Value: ${label}`}
               />
               <Area

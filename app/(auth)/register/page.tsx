@@ -161,8 +161,8 @@ export default function RegisterPage() {
 
         <div className="sm:mx-auto sm:w-full sm:max-w-md relative z-10">
           <Link href="/" className="flex justify-center items-center gap-3 group animate-fadeIn">
-            <div className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-              <span className="text-white font-bold text-2xl">A</span>
+            <div className="w-12 h-12 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <img src="/logo.png" alt="DEEPAKX999AUTH Logo" className="w-full h-full object-contain" />
             </div>
             <h1 className="text-3xl font-bold bg-gradient-to-r from-slate-700 to-slate-900 dark:from-slate-400 dark:to-slate-200 bg-clip-text text-transparent">
               DEEPAKX999AUTH

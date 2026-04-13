@@ -51,8 +51,8 @@ export default function LandingPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <Link href="/" className="flex items-center gap-2">
-                <div className="w-10 h-10 bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">D</span>
+                <div className="w-10 h-10 flex items-center justify-center">
+                  <img src="/logo.png" alt="DEEPAKX999AUTH Logo" className="w-full h-full object-contain" />
                 </div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-slate-700 to-slate-900 dark:from-slate-400 dark:to-slate-200 bg-clip-text text-transparent">
                   DEEPAKX999AUTH
@@ -292,8 +292,8 @@ console.log("Valid:", license.valid);`}
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <div className="flex items-center gap-2 mb-4">
-                  <div className="w-8 h-8 bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-600 dark:to-slate-800 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold">D</span>
+                  <div className="w-8 h-8 flex items-center justify-center">
+                    <img src="/logo.png" alt="DEEPAKX999AUTH Logo" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-xl font-bold text-slate-900 dark:text-white">DEEPAKX999AUTH</span>
                 </div>

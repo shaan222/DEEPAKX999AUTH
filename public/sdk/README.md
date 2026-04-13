@@ -1,4 +1,4 @@
-# Licensify SDK Library 💻
+# DEEPAKX999AUTH SDK Library 💻
 
 Production-ready authentication SDKs for 11+ programming languages. Download, integrate, and ship in minutes.
 
@@ -6,30 +6,30 @@ Production-ready authentication SDKs for 11+ programming languages. Download, in
 
 | Language | Version | Installation | File |
 |----------|---------|-------------|------|
-| **JavaScript** | 1.0.0 | `npm install licensify-sdk` | [licensify-client.js](./javascript/licensify-client.js) |
-| **TypeScript** | 1.0.0 | `npm install licensify-sdk` | [licensify-client.ts](./typescript/licensify-client.ts) |
-| **Python** | 1.0.0 | `pip install licensify-sdk` | [auth_client.py](./python/auth_client.py) |
-| **C#** | 1.0.0 | `dotnet add package Licensify.SDK` | [AuthClient.cs](./csharp/AuthClient.cs) |
+| **JavaScript** | 1.0.0 | `npm install DEEPAKX999AUTH-sdk` | [licensify-client.js](./javascript/licensify-client.js) |
+| **TypeScript** | 1.0.0 | `npm install DEEPAKX999AUTH-sdk` | [licensify-client.ts](./typescript/licensify-client.ts) |
+| **Python** | 1.0.0 | `pip install DEEPAKX999AUTH-sdk` | [auth_client.py](./python/auth_client.py) |
+| **C#** | 1.0.0 | `dotnet add package DEEPAKX999AUTH.SDK` | [AuthClient.cs](./csharp/AuthClient.cs) |
 | **Java** | 1.0.0 | Maven/Gradle | [AuthClient.java](./java/AuthClient.java) |
-| **PHP** | 1.0.0 | `composer require licensify/sdk` | [LicensifyClient.php](./php/LicensifyClient.php) |
+| **PHP** | 1.0.0 | `composer require DEEPAKX999AUTH/sdk` | [LicensifyClient.php](./php/LicensifyClient.php) |
 | **C++** | 1.0.0 | Build from source | [licensify_client.hpp](./cpp/licensify_client.hpp) |
-| **Go** | 1.0.0 | `go get github.com/licensify/sdk` | [licensify.go](./go/licensify.go) |
-| **Rust** | 1.0.0 | `cargo add licensify-sdk` | [licensify.rs](./rust/licensify.rs) |
-| **Ruby** | 1.0.0 | `gem install licensify-sdk` | [licensify_client.rb](./ruby/licensify_client.rb) |
-| **Lua** | 1.0.0 | `luarocks install licensify` | [licensify.lua](./lua/licensify.lua) |
+| **Go** | 1.0.0 | `go get github.com/DEEPAKX999AUTH/sdk` | [licensify.go](./go/licensify.go) |
+| **Rust** | 1.0.0 | `cargo add DEEPAKX999AUTH-sdk` | [licensify.rs](./rust/licensify.rs) |
+| **Ruby** | 1.0.0 | `gem install DEEPAKX999AUTH-sdk` | [licensify_client.rb](./ruby/licensify_client.rb) |
+| **Lua** | 1.0.0 | `luarocks install DEEPAKX999AUTH` | [licensify.lua](./lua/licensify.lua) |
 
 ## 🚀 Quick Start
 
 ### JavaScript / TypeScript
 
 ```bash
-npm install licensify-sdk
+npm install DEEPAKX999AUTH-sdk
 ```
 
 ```javascript
-import LicensifyClient from 'licensify-sdk';
+import DEEPAKX999AUTHClient from 'DEEPAKX999AUTH-sdk';
 
-const client = new LicensifyClient('YOUR_API_KEY', 'YOUR_APP_NAME');
+const client = new DEEPAKX999AUTHClient('YOUR_API_KEY', 'YOUR_APP_NAME');
 
 // Login
 const result = await client.login('username', 'password');
@@ -47,13 +47,13 @@ if (validation.valid) {
 ### Python
 
 ```bash
-pip install licensify-sdk
+pip install DEEPAKX999AUTH-sdk
 ```
 
 ```python
-from licensify_sdk import LicensifyClient
+from DEEPAKX999AUTH_sdk import DEEPAKX999AUTHClient
 
-async with LicensifyClient('YOUR_API_KEY', 'YOUR_APP_NAME') as client:
+async with DEEPAKX999AUTHClient('YOUR_API_KEY', 'YOUR_APP_NAME') as client:
     # Login
     result = await client.login('username', 'password')
     if result['success']:
@@ -68,13 +68,13 @@ async with LicensifyClient('YOUR_API_KEY', 'YOUR_APP_NAME') as client:
 ### C#
 
 ```bash
-dotnet add package Licensify.SDK
+dotnet add package DEEPAKX999AUTH.SDK
 ```
 
 ```csharp
-using Licensify.SDK;
+using DEEPAKX999AUTH.SDK;
 
-var client = new LicensifyClient("YOUR_API_KEY", "YOUR_APP_NAME");
+var client = new DEEPAKX999AUTHClient("YOUR_API_KEY", "YOUR_APP_NAME");
 
 // Login
 var result = await client.LoginAsync("username", "password");
@@ -94,14 +94,14 @@ if (validation.Valid)
 ### PHP
 
 ```bash
-composer require licensify/sdk
+composer require DEEPAKX999AUTH/sdk
 ```
 
 ```php
 <?php
-use Licensify\SDK\LicensifyClient;
+use DEEPAKX999AUTH\SDK\DEEPAKX999AUTHClient;
 
-$client = new LicensifyClient('YOUR_API_KEY', 'YOUR_APP_NAME');
+$client = new DEEPAKX999AUTHClient('YOUR_API_KEY', 'YOUR_APP_NAME');
 
 // Login
 $result = $client->login('username', 'password123');
@@ -119,7 +119,7 @@ if ($validation['valid']) {
 ### Go
 
 ```bash
-go get github.com/licensify/sdk
+go get github.com/DEEPAKX999AUTH/sdk
 ```
 
 ```go
@@ -127,11 +127,11 @@ package main
 
 import (
     "fmt"
-    "github.com/licensify/sdk"
+    "github.com/DEEPAKX999AUTH/sdk"
 )
 
 func main() {
-    client := licensify.NewClient("YOUR_API_KEY", "YOUR_APP_NAME", "")
+    client := DEEPAKX999AUTH.NewClient("YOUR_API_KEY", "YOUR_APP_NAME", "")
     
     // Login
     result, _ := client.Login("username", "password123", "")
@@ -220,15 +220,15 @@ All SDKs automatically generate unique Hardware IDs based on:
 
 ## 📖 Documentation
 
-- [API Reference](https://www.licensify.space/dashboard/docs/api)
-- [HWID Examples](https://www.licensify.space/dashboard/docs/hwid)
-- [Integration Guide](https://www.licensify.space/docs)
-- [SDK Examples](https://www.licensify.space/dashboard/sdk)
+- [API Reference](https://deepakx-999-auth.vercel.app/dashboard/docs/api)
+- [HWID Examples](https://deepakx-999-auth.vercel.app/dashboard/docs/hwid)
+- [Integration Guide](https://deepakx-999-auth.vercel.app/docs)
+- [SDK Examples](https://deepakx-999-auth.vercel.app/dashboard/sdk)
 
 ## 🆘 Support
 
-- **Documentation**: [https://www.licensify.space/docs](https://www.licensify.space/docs)
-- **Dashboard**: [https://www.licensify.space/dashboard](https://www.licensify.space/dashboard)
+- **Documentation**: [https://deepakx-999-auth.vercel.app/docs](https://deepakx-999-auth.vercel.app/docs)
+- **Dashboard**: [https://deepakx-999-auth.vercel.app/dashboard](https://deepakx-999-auth.vercel.app/dashboard)
 - **Issues**: Report bugs and request features through your dashboard
 
 ## 📄 License
@@ -254,4 +254,5 @@ All SDKs are released under the MIT License.
 
 ---
 
-Made with ❤️ by Licensify
+Made with ❤️ by DEEPAKX999AUTH
+

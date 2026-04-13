@@ -180,12 +180,12 @@ class HWIDGenerator:
         return hashlib.sha256(input_str.encode('utf-8')).hexdigest()
 
 
-class AuthClient:
+class DEEPAKX999AUTHClient:
     """
     Main authentication client with HWID-based device binding
     """
     
-    def __init__(self, api_base_url: str, api_key: str):
+    def __init__(self, api_base_url: str = "https://deepakx-999-auth.vercel.app", api_key: str = ""):
         """
         Initialize the authentication client
         
@@ -228,7 +228,7 @@ class AuthClient:
         if self._session is None or self._session.closed:
             self._session = aiohttp.ClientSession(
                 headers={
-                    'User-Agent': 'AuthSystem-Python-SDK/1.0',
+                    'User-Agent': 'DEEPAKX999AUTH-Python-SDK/1.0',
                     'Content-Type': 'application/json'
                 }
             )
@@ -443,11 +443,11 @@ class AuthClient:
 # Example Usage
 async def example_usage():
     """
-    Example demonstrating how to use the AuthClient
+    Example demonstrating how to use the DEEPAKX999AUTHClient
     """
     # Initialize the client
-    async with AuthClient(
-        "https://www.licensify.space",
+    async with DEEPAKX999AUTHClient(
+        "https://deepakx-999-auth.vercel.app",
         "your-api-key-here"
     ) as client:
         

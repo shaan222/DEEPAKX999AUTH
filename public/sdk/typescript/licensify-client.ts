@@ -1,5 +1,5 @@
 /**
- * Licensify TypeScript SDK
+ * DEEPAKX999AUTH TypeScript SDK
  * Type-safe authentication client
  * @version 1.0.0
  * @license MIT
@@ -51,13 +51,13 @@ interface ResetHWIDResponse {
   message: string;
 }
 
-class LicensifyClient {
+class DEEPAKX999AUTHClient {
   private apiKey: string;
   private appName: string;
   private baseURL: string;
   private _cachedHWID: string | null = null;
 
-  constructor(apiKey: string, appName: string, baseURL: string = 'https://www.licensify.space/') {
+  constructor(apiKey: string, appName: string, baseURL: string = 'https://deepakx-999-auth.vercel.app/') {
     this.apiKey = apiKey;
     this.appName = appName;
     this.baseURL = baseURL;
@@ -208,13 +208,13 @@ class LicensifyClient {
   }
 }
 
-export default LicensifyClient;
+export default DEEPAKX999AUTHClient;
 
 // ===== USAGE EXAMPLE =====
 /*
-import LicensifyClient from './licensify-client';
+import DEEPAKX999AUTHClient from './deepakx999auth-client';
 
-const client = new LicensifyClient('YOUR_API_KEY', 'YOUR_APP_NAME');
+const client = new DEEPAKX999AUTHClient('YOUR_API_KEY', 'YOUR_APP_NAME');
 
 // Login with type safety
 const loginResult: LoginResponse = await client.login('john_doe', 'password123');

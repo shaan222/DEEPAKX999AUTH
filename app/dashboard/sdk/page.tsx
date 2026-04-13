@@ -108,7 +108,7 @@ export default function SDKExamplesPage() {
 // Works in Node.js and modern browsers
 
 class DEEPAKX999AUTHClient {
-  constructor(apiKey, appName, baseURL = 'https://www.DEEPAKX999AUTH.space/') {
+  constructor(apiKey, appName, baseURL = 'https://deepakx-999-auth.vercel.app/') {
     this.apiKey = apiKey;
     this.appName = appName;
     this.baseURL = baseURL;
@@ -248,7 +248,7 @@ class DEEPAKX999AUTHClient {
   private appName: string;
   private baseURL: string;
 
-  constructor(apiKey: string, appName: string, baseURL: string = 'https://www.DEEPAKX999AUTH.space/') {
+  constructor(apiKey: string, appName: string, baseURL: string = 'https://deepakx-999-auth.vercel.app/') {
     this.apiKey = apiKey;
     this.appName = appName;
     this.baseURL = baseURL;
@@ -370,7 +370,7 @@ class DEEPAKX999AUTHClient:
     Async authentication client with HWID-based device binding
     """
     
-    def __init__(self, api_key: str, app_name: str, base_url: str = "https://www.DEEPAKX999AUTH.space/"):
+    def __init__(self, api_key: str, app_name: str, base_url: str = "https://deepakx-999-auth.vercel.app/"):
         self.api_key = api_key
         self.app_name = app_name
         self.base_url = base_url.rstrip('/')
@@ -527,7 +527,7 @@ namespace DEEPAKX999AUTH.SDK
         private readonly string _baseURL;
         private string _cachedHwid;
 
-        public DEEPAKX999AUTHClient(string apiKey, string appName, string baseURL = "https://www.DEEPAKX999AUTH.space/")
+        public DEEPAKX999AUTHClient(string apiKey, string appName, string baseURL = "https://deepakx-999-auth.vercel.app/")
         {
             _apiKey = apiKey;
             _appName = appName;
@@ -744,7 +744,7 @@ public class DEEPAKX999AUTHClient {
     }
 
     public DEEPAKX999AUTHClient(String apiKey, String appName) {
-        this(apiKey, appName, "https://www.DEEPAKX999AUTH.space/");
+        this(apiKey, appName, "https://deepakx-999-auth.vercel.app/");
     }
 
     // Generate Hardware ID
@@ -911,7 +911,7 @@ class DEEPAKX999AUTHClient {
     private Client $httpClient;
     private ?string $cachedHwid = null;
 
-    public function __construct(string $apiKey, string $appName, string $baseURL = 'https://www.DEEPAKX999AUTH.space/') {
+    public function __construct(string $apiKey, string $appName, string $baseURL = 'https://deepakx-999-auth.vercel.app/') {
         $this->apiKey = $apiKey;
         $this->appName = $appName;
         $this->baseURL = rtrim($baseURL, '/');
@@ -1078,7 +1078,7 @@ private:
 
 public:
     DEEPAKX999AUTHClient(const std::string& apiKey, const std::string& appName, 
-                   const std::string& baseURL = "https://www.DEEPAKX999AUTH.space/")
+                   const std::string& baseURL = "https://deepakx-999-auth.vercel.app/")
         : apiKey(apiKey), appName(appName), baseURL(baseURL) {
         curl = curl_easy_init();
         if (this->baseURL.back() == '/') {
@@ -1226,7 +1226,7 @@ type Client struct {
 // NewClient creates a new DEEPAKX999AUTH client
 func NewClient(apiKey, appName, baseURL string) *Client {
     if baseURL == "" {
-        baseURL = "https://www.DEEPAKX999AUTH.space/"
+        baseURL = "https://deepakx-999-auth.vercel.app/"
     }
     return &Client{
         APIKey:  apiKey,
@@ -1601,7 +1601,7 @@ module DEEPAKX999AUTH
 
     attr_reader :api_key, :app_name, :base_url
 
-    def initialize(api_key, app_name, base_url = 'https://www.DEEPAKX999AUTH.space/')
+    def initialize(api_key, app_name, base_url = 'https://deepakx-999-auth.vercel.app/')
       @api_key = api_key
       @app_name = app_name
       @base_url = base_url.chomp('/')

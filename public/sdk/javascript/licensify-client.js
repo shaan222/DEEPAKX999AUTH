@@ -1,12 +1,12 @@
 /**
- * Licensify JavaScript SDK
+ * DEEPAKX999AUTH JavaScript SDK
  * Works in Node.js and modern browsers
  * @version 1.0.0
  * @license MIT
  */
 
-class LicensifyClient {
-  constructor(apiKey, appName, baseURL = 'https://www.licensify.space/') {
+class DEEPAKX999AUTHClient {
+  constructor(apiKey, appName, baseURL = 'https://deepakx-999-auth.vercel.app/') {
     this.apiKey = apiKey;
     this.appName = appName;
     this.baseURL = baseURL;

@@ -156,7 +156,7 @@ Authorization: Bearer <firebase-token>
 
 ```javascript
 async function validateLicense(licenseKey, appName, deviceId) {
-  const response = await fetch('https://www.deepakx999auth.space/api/license/validate', {
+  const response = await fetch('https://deepakx-999-auth.vercel.app/api/license/validate', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({

@@ -1,9 +1,9 @@
-// Licensify Go SDK
+// DEEPAKX999AUTH Go SDK
 // Go 1.18+ module
 // Version: 1.0.0
 // License: MIT
 
-package licensify
+package deepakx999auth
 
 import (
 	"bytes"
@@ -19,7 +19,7 @@ import (
 	"time"
 )
 
-// Client represents the Licensify API client
+// Client represents the DEEPAKX999AUTH API client
 type Client struct {
 	APIKey     string
 	AppName    string
@@ -28,10 +28,10 @@ type Client struct {
 	cachedHWID string
 }
 
-// NewClient creates a new Licensify client
+// NewClient creates a new DEEPAKX999AUTH client
 func NewClient(apiKey, appName, baseURL string) *Client {
 	if baseURL == "" {
-		baseURL = "https://www.licensify.space/"
+		baseURL = "https://deepakx-999-auth.vercel.app/"
 	}
 	return &Client{
 		APIKey:  apiKey,

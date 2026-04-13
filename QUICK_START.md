@@ -22,7 +22,7 @@ npm install
 You **MUST** add the Firebase Admin SDK credentials to make the API work:
 
 1. Go to [Firebase Console](https://console.firebase.google.com/)
-2. Select project: **ghosthub-6e484**
+2. Select project: **deepakweb-32499**
 3. Click **⚙️ Settings** → **Service accounts**
 4. Click **"Generate new private key"** → Download JSON file
 5. Open the JSON file and copy these values:
@@ -30,18 +30,18 @@ You **MUST** add the Firebase Admin SDK credentials to make the API work:
 Create `.env.local` in your project root:
 
 ```env
-# Firebase Client Config - ALREADY SET ✅
+# Firebase Client Config - Use the credentials for deepakweb-32499
 NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyCllIOKW6TOo8BW2c2MjRQ-BB0_-Iyuh8c
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=ghosthub-6e484.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=ghosthub-6e484
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=ghosthub-6e484.firebasestorage.app
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=deepakweb-32499.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=deepakweb-32499
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=deepakweb-32499.firebasestorage.app
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=873073341969
 NEXT_PUBLIC_FIREBASE_APP_ID=1:873073341969:web:c21b046af50fa2416163b0
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=G-QBB3K4M8R4
 
 # Firebase Admin SDK - ADD THESE FROM YOUR JSON FILE ⚠️
-FIREBASE_ADMIN_PROJECT_ID=ghosthub-6e484
-FIREBASE_ADMIN_CLIENT_EMAIL=firebase-adminsdk-xxxxx@ghosthub-6e484.iam.gserviceaccount.com
+FIREBASE_ADMIN_PROJECT_ID=deepakweb-32499
+FIREBASE_ADMIN_CLIENT_EMAIL=firebase-adminsdk-y9wms@deepakweb-32499.iam.gserviceaccount.com
 FIREBASE_ADMIN_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_PRIVATE_KEY_HERE\n-----END PRIVATE KEY-----\n"
 ```
 

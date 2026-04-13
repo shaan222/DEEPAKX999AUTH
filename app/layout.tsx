@@ -7,6 +7,13 @@ import AuthProviderWrapper from '@/components/AuthProviderWrapper'
 export const metadata: Metadata = {
   title: 'DEEPAKX999AUTH - License & Authentication System',
   description: 'Modern authentication and license management system',
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
 }
 
 export default function RootLayout({

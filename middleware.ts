@@ -39,6 +39,7 @@ export function middleware(request: NextRequest) {
   
   // Allowed origins (your domain)
   const allowedOrigins = [
+    'https://deepakx-999-auth.vercel.app',
     'https://www.licensify.space',
     'http://localhost:3000',
     'http://localhost:3001',
